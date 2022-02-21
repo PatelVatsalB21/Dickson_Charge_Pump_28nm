@@ -14,3 +14,7 @@ This repository presents the design of 5 stage Dickson Charge Pump implemented u
 - [References](#references)
 - [Acknowledgements](#acknowledgements)
 - [Author](#author)
+
+
+## Introduction
+The Dickson Charge Pump is a DC-DC converter that produces a higher voltage than the supply voltage. Dickson charge pump removes the need for large inductors by using MOSFETs as switches. Hence making the circuit small in size and energy-efficient. The Dickson Charge Pump is intended for low-voltage purposes. This circuit is widely implemented in various IC applications, especially in non-volatile memories like the Flash and EEPROM and PLLs.
