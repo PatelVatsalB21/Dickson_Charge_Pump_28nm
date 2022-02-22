@@ -250,8 +250,8 @@ r8 output gnd! r=5000k
 ## Observations
 
 ## Limitations
-
-
+- As high voltage is passed from one stage to the next stage of pump, it causes a threshold voltage drop. This threshold voltage drop reduces the voltage gain in each stage. Therefore, the conventional Dickson charge pump has low voltage gain
+- The threshold voltage of the NMOS transistor increases from the input side to the output side due to the body effect. The body effect further reduces the voltage gain per stage as the number of stage **n** increases. Eventually, the output voltage of the charge pump saturates and does not increase further even more stages are cascaded.
 
 ## References
 - Design of Analog CMOS Integrated Circuits by Behzad Razavi
