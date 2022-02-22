@@ -248,5 +248,9 @@ r8 output gnd! r=5000k
 ## References
 
 ## Acknowledgements
+- [Kunal Ghosh](https://github.com/kunalg123), Founder, VSD Corp. Pvt. Ltd - kunalpghosh@gmail.com
+- [Indian Institute Of Technology (IIT), Hyderabad](https://iith.ac.in/)
+- [Synopsys](https://www.synopsys.com/)
 
 ## Author
+- [Vatsal Patel](https://github.com/patelvatsalb21),Bachelor of Technology in Electronics and Communication Engineering, VGEC
