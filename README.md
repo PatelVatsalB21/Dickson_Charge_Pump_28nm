@@ -24,17 +24,23 @@ This repository presents the design of 5 stage Dickson Charge Pump implemented u
 ## Abstract
 The Dickson Charge Pump is a DC-DC converter that produces a higher voltage than the supply voltage. Dickson charge pump removes the need for large inductors by using MOSFETs as switches. Hence making the circuit small in size and energy-efficient. The Dickson Charge Pump is intended for low-voltage purposes. This circuit is widely implemented in various IC applications, especially in non-volatile memories like the Flash and EEPROM and PLLs.
 
+## Dickson Charge Pump Working
+The Dickson Charge Pump is composed of the pumping capacitors arranged in a parallel fashion, which decreases the output impedance and increases the voltage gain as the number of stages increases. In addition to the DC input, the circuit requires a feed of two clock pulse trains with an amplitude swinging between the DC supply rails. These pulse trains are in antiphase. In Dickson Charge Pump, Vdd is the power supply voltage, NMOS transistor acts as switches, and V1 is the node voltage at the upper plate of the capacitor. Two clock sources having the same peak voltage, complementary phase, and non-overlapping, are applied to each stage in an alternative manner.
+
+When the first clock is low, the second clock will be high due to the complementary phase subsequently, the first switch is turned ON, and the first capacitor is charged by the voltage source Vdd to the maximum voltage of Vdd - Vt at node V1. In the next half clock, the first switch turns OFF, and the voltage Vdd provided by the first clock, gets added to the voltage Vdd - Vt that is already present, and as a result, the voltage at node V2 becomes 2Vdd - Vt. Simultaneously the second switch turns ON, and the next capacitor is charged through the second switch by the voltage 2Vdd- Vt, to a maximum voltage of 2Vdd - 2Vt.  The last
+capacitor is used to smoothen the output so it doesn’t add any voltage as it is grounded. In this way, the charge is pumped from one stage to another, and the node voltages at pumping capacitors of higher stages increase continuously.
+
 
 ## Reference Circuit Details
 
 
 ### Reference Circuit Diagram
 
-![Circuit Schematic](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/Dickson%20charge%20pump%20reference%20circuit.png)
+![Circuit Schematic](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/reference%20images/Dickson%20Charge%20Pump%20Reference%20Circuit.png)
 
 ### Reference Circuit Waveform
 
-![Output Waveform](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/Dickson%20Charge%20Pump%20Reference%20Output.png)
+![Output Waveform](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/reference%20images/Dickson%20Charge%20Pump%20Reference%20Output.png)
 
 
 
@@ -244,6 +250,8 @@ r8 output gnd! r=5000k
 ## Observations
 
 ## Limitations
+
+
 
 ## References
 
