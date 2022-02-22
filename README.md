@@ -51,12 +51,12 @@ capacitor is used to smoothen the output so it doesn’t add any voltage as it i
 
 ![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/dickson_pump_5stage_pump_cell_schematic.png)
 
-The circuit implemented consist to 9 NMOS as 2n+1 NMOS(n is number of stages) for 4 stages of pump. It also consists of 8 charging capacitors of 10pF capacitance and a filter capacitor of 1pf capacitance. It consists of 4 pins :- Input, Output, CLK1 and CLK2.
+The circuit implemented consists of 9 NMOS as 2n+1 NMOS(n is the number of stages) for 4 stages of the pump. It also consists of 8 charging capacitors of 10pF capacitance and a filter capacitor of 1pf capacitance. It consists of 4 pins:- Input, Output, CLK1 and CLK2.
 
 
 ![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/dickson_pump_5stage_pump_cell_symbol.png)
 
-Above shown is the symbol for charge pump circuit.
+Above shown is the symbol for the charge pump circuit.
 
 
 ### Testbench for Dickson Charge Pump
@@ -238,7 +238,7 @@ r8 output gnd! r=5000k
 
 ## Simulation Results
 
-As in the image below output of the Dickson Charge Pump rises in 0.973us and then saturates at a constant output of 4.39V - 4.4V. The Charge pump coverts input voltage of 1.05V to the output voltage of 4.4V with the Voltage Conversion Ratio (M) around 4.2. The clock signals have rise and fall time of 1ns. Hence the operating frequency of the circuit is around 1 GHz.
+As in the image below the output of the Dickson Charge Pump rises in 0.973us and then saturates at a constant output of 4.39V - 4.4V. The Charge pump converts the input voltage of 1.05v to the output voltage of 4.4V with the Voltage Conversion Ratio (M) around 4.2. The clock signals have a rise and fall time of 1ns. Hence the operating frequency of the circuit is around 1 GHz.
 
 ### Output for 5us
 
