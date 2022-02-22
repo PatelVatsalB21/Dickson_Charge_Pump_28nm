@@ -1,5 +1,5 @@
 # 4 Stage Dickson Charge Pump using 28nm CMOS Technology
-This repository presents the design of 4 stage Dickson Charge Pump implemented using Synopsis Custom Compiler on 28nm CMOS Technology.
+This repository presents the design of 4 Stage Dickson Charge Pump implemented using Synopsis Custom Compiler on 28nm CMOS Technology.
 
 ## Table of Contents
 - [Abstract](#abstract)
@@ -86,7 +86,7 @@ As shown above Dickson Charge Pump cell, constant DC supply, two pulse DC voltag
 
 ## Netlist
 
-### 5 stage Dickson Charge Pump Cell
+### 4 stage Dickson Charge Pump Cell
 ```
 *  Generated for: PrimeSim
 *  Design library name: dickson_pump_3stage
@@ -238,7 +238,7 @@ r8 output gnd! r=5000k
 
 ## Simulation Results
 
-As in the image below output of the Dickson Charge Pump rises in 0.973us and then saturates at a constant output of 4.39V - 4.4V. The Charge pump coverts input voltage of 1.05v to the output voltage of 4.4V with the Voltage Conversion Ratio (M) around 4.2. The clock signals have rise and fall time of 1ns. Hence the operating frequency of the circuit is around 1 GHz.
+As in the image below output of the Dickson Charge Pump rises in 0.973us and then saturates at a constant output of 4.39V - 4.4V. The Charge pump coverts input voltage of 1.05V to the output voltage of 4.4V with the Voltage Conversion Ratio (M) around 4.2. The clock signals have rise and fall time of 1ns. Hence the operating frequency of the circuit is around 1 GHz.
 
 ### Output for 5us
 
@@ -268,6 +268,7 @@ As in the image below output of the Dickson Charge Pump rises in 0.973us and the
 - Design of Analog CMOS Integrated Circuits by Behzad Razavi
 - [Analysis and design of dickson charge pump for EEPROM in 180nm CMOS technology](https://ieeexplore.ieee.org/document/8354067)
 - [Dynamic_gate_and_substrate_control_charge_pump_circuits_a_review](https://www.researchgate.net/publication/275247649_Dynamic_gate_and_substrate_control_charge_pump_circuits_a_review)
+- [A comparative study of charge pumping circuits for flash memory applications](http://dx.doi.org/10.1016/j.microrel.2011.09.031)
 
 
 ## Acknowledgements
