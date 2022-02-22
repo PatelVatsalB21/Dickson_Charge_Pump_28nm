@@ -1,4 +1,4 @@
-# Dickson Charge Pump using 28nm CMOS Technology
+# 5 Stage Dickson Charge Pump using 28nm CMOS Technology
 This repository presents the design of 5 stage Dickson Charge Pump implemented using Synopsis Custom Compiler on 28nm CMOS Technology.
 
 ## Table of Contents
@@ -8,14 +8,13 @@ This repository presents the design of 5 stage Dickson Charge Pump implemented u
   - [Reference Circuit Waveform](#reference-circuit-waveform)
 - [Simulation in Synopsys](#simulation-in-synopsys)
   * [Schematic](#schematic)
-  * [Parameters set for Voltage Source for Input A](#parameters-set-for-voltage-source-for-input-a)
-  * [Parameters set for Voltage Source for Input B](#parameters-set-for-voltage-source-for-input-b)
+  * [Parameters set for Voltage Source for Input](#parameters-set-for-voltage-source-for-input)
+  * [Parameters set for Pulse Voltage Source for Clock 1](#parameters-set-for-pulse-voltage-source-for-clock-1)
+  * [Parameters set for Pulse Voltage Source for Clock 1](#parameters-set-for-pulse-voltage-source-for-clock-1)
   * [Transient Settings](#transient-settings)
   * [Netlist](#netlist)
-  * [Waveform](#waveform)
-- [Challenge](#challenge)
-- [Troubleshooting](#troubleshooting)
-- [Reproduce_waveforms](#reproduce_waveforms)
+  * [Simulation Results](#simulation-results)
+- [Observations](#observations)
 - [Limitations](#limitations)
 - [References](#references)
 - [Acknowledgements](#acknowledgements)
@@ -240,3 +239,14 @@ r8 output gnd! r=5000k
 
 ### Output with other signals
 ![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/simulation/5%20stage%20pump%201ns%20rs%2010pf%20load%201pf%20cap%20separate.png)
+
+
+## Observations
+
+## Limitations
+
+## References
+
+## Acknowledgements
+
+## Author
