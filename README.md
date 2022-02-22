@@ -230,5 +230,13 @@ r8 output gnd! r=5000k
 .end
 ```
 
-## Waveform
-![image]()
+## Simulation Results
+
+### Output for 5us
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/simulation/5%20stage%20pump%201ns%20rs%2010pf%20load%201pf%20cap%20alone%205us.png)
+
+### Output for 20us
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/simulation/5%20stage%20pump%201ns%20rs%2010pf%20load%201pf%20cap%20alone.png)
+
+### Output with other signals
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/simulation/5%20stage%20pump%201ns%20rs%2010pf%20load%201pf%20cap%20separate.png)
