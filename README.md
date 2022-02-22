@@ -254,6 +254,11 @@ r8 output gnd! r=5000k
 
 
 ## References
+- Design of Analog CMOS Integrated Circuits by Behzad Razavi
+- [Analysis and design of dickson charge pump for EEPROM in 180nm CMOS technology](https://ieeexplore.ieee.org/document/8354067)
+- [Dynamic_gate_and_substrate_control_charge_pump_circuits_a_review](https://www.researchgate.net/publication/275247649_Dynamic_gate_and_substrate_control_charge_pump_circuits_a_review)
+
+
 
 ## Acknowledgements
 - [Kunal Ghosh](https://github.com/kunalg123), Founder, VSD Corp. Pvt. Ltd - kunalpghosh@gmail.com
