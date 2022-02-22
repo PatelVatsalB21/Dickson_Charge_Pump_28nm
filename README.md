@@ -248,6 +248,11 @@ r8 output gnd! r=5000k
 
 
 ## Observations
+- Output Voltage of the Dickson Charge Pump is 4.4V.
+- Operating Frequency of the charge pump is 1 GHz.
+- Rise Time of the charge pump is 0.973us.
+- Voltage Conversion Ratio (M) of the charge pump is 4.19
+
 
 ## Limitations
 - As high voltage is passed from one stage to the next stage of pump, it causes a threshold voltage drop. This threshold voltage drop reduces the voltage gain in each stage. Therefore, the conventional Dickson charge pump has low voltage gain
@@ -259,11 +264,10 @@ r8 output gnd! r=5000k
 - [Dynamic_gate_and_substrate_control_charge_pump_circuits_a_review](https://www.researchgate.net/publication/275247649_Dynamic_gate_and_substrate_control_charge_pump_circuits_a_review)
 
 
-
 ## Acknowledgements
 - [Kunal Ghosh](https://github.com/kunalg123), Founder, VSD Corp. Pvt. Ltd - kunalpghosh@gmail.com
 - [Indian Institute Of Technology (IIT), Hyderabad](https://iith.ac.in/)
 - [Synopsys](https://www.synopsys.com/)
 
 ## Author
-- [Vatsal Patel](https://github.com/patelvatsalb21),Bachelor of Technology in Electronics and Communication Engineering, VGEC
+- [Vatsal Patel](https://github.com/patelvatsalb21), Bachelor of Technology in Electronics and Communication Engineering, VGEC
