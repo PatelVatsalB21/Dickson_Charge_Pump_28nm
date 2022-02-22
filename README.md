@@ -2,8 +2,10 @@
 This repository presents the design of 5 stage Dickson Charge Pump implemented using Synopsis Custom Compiler on 28nm CMOS Technology.
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Reference_Circuit](#reference_circuit)
+- [Abstract](#abstract)
+- [Reference Circuit Details](#reference-circuit-details)
+  - [Reference Circuit Diagram](#reference-circuit-diagram)
+  - [Reference Circuit Waveform](#reference-circuit-waveform)
 - [Implementation](#implementation)
 - [Schematic_Netlist_Waveform](#schematic_netlist_waveform)
 - [Methodology](#methodology)
@@ -16,10 +18,17 @@ This repository presents the design of 5 stage Dickson Charge Pump implemented u
 - [Author](#author)
 
 
-## Introduction
+## Abstract
 The Dickson Charge Pump is a DC-DC converter that produces a higher voltage than the supply voltage. Dickson charge pump removes the need for large inductors by using MOSFETs as switches. Hence making the circuit small in size and energy-efficient. The Dickson Charge Pump is intended for low-voltage purposes. This circuit is widely implemented in various IC applications, especially in non-volatile memories like the Flash and EEPROM and PLLs.
 
 
-## Reference_Circuit
+## Reference Circuit Details
 
-![Circuit Schematic()
+
+### Reference Circuit Diagram
+
+![Circuit Schematic](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/Dickson%20charge%20pump%20reference%20circuit.png)
+
+### Reference Circuit Waveform
+
+![Output Waveform](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/Dickson%20Charge%20Pump%20Reference%20Output.png)
