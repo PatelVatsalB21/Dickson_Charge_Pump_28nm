@@ -6,6 +6,7 @@ This repository presents the design of 4 Stage Dickson Charge Pump implemented u
 - [Reference Circuit Details](#reference-circuit-details)
   - [Reference Circuit Diagram](#reference-circuit-diagram)
   - [Reference Circuit Waveform](#reference-circuit-waveform)
+- [Tools Used](#tools-used)
 - [Simulation in Synopsys](#simulation-in-synopsys)
   * [Schematic](#schematic)
   * [Parameters set for Voltage Source for Input](#parameters-set-for-voltage-source-for-input)
@@ -42,6 +43,13 @@ capacitor is used to smoothen the output so it doesn’t add any voltage as it i
 
 ![Output Waveform](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/reference%20images/Dickson%20Charge%20Pump%20Reference%20Output.png)
 
+# Tools Used
+
+- **Synopsys Custom Compiler**:  The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.
+
+- **Synopsys Primewave**:  PrimeWave™ Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. This tool helped in various types of simulations of the above designed circuit.
+
+- **Synopsys 28nm PDK**:  The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
 
 # Simulation in Synopsys
 
