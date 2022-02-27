@@ -260,6 +260,9 @@ As in the image below the output of the Dickson Charge Pump rises in 1.8us and t
 
 ![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/simulation/4%20stage%20100ps%20rs%201pf%20load%200.1pf%20filter%201p%2010us%20separate%20signals.png)
 
+### Rise Time Calculation
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/simulation/4%20stage%20100ps%20rs%201pf%20load%200.1pf%20filter%201p%2010us%20rise%20time%20zoom.png)
+
 
 ## Observations
 - Output Voltage of the Dickson Charge Pump is **4.4V**.
