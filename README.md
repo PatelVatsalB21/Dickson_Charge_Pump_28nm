@@ -59,7 +59,7 @@ capacitor is used to smoothen the output so it doesn’t add any voltage as it i
 
 ![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/4%20stage%20charge%20pump.png)
 
-The circuit implemented consists of 9 NMOS as 2n+1 NMOS(n is the number of stages) for 4 stages of the pump. It also consists of 8 charging capacitors of 10pF capacitance and a filter capacitor of 1pf capacitance. It consists of 4 pins:- Input, Output, CLK1 and CLK2.
+The circuit implemented consists of 9 NMOS as 2n+1 NMOS(n is the number of stages) for 4 stages of the pump. It also consists of 8 charging capacitors of 1pF capacitance and a filter capacitor of 0.1pf capacitance. It consists of 4 pins:- Input, Output, CLK1 and CLK2.
 
 
 ![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/dickson_pump_5stage_pump_cell_symbol.png)
@@ -246,7 +246,7 @@ xi2 clk1 clk2 input output pump_cell
 
 ## Simulation Results
 
-As in the image below the output of the Dickson Charge Pump rises in 1.8us and then saturates at a constant output of 4.39V - 4.4V. The Charge pump converts the input voltage of 1.05v to the output voltage of 4.4V with the Voltage Conversion Ratio (M) around 4.2. The clock signals have a rise and fall time of 1ns. Hence the operating frequency of the circuit is around 1 GHz.
+As in the image below the output of the Dickson Charge Pump rises in 187ns and then saturates at a constant output of 4.4V - 4.47V. The Charge pump converts the input voltage of 1.05v to the output voltage of 4.47V with the Voltage Conversion Ratio (M) around 4.25. The clock signals have a rise and fall time of 100ps. Hence the operating frequency of the circuit is around 10 GHz.
 
 ### Output for 2us
 
@@ -265,10 +265,10 @@ As in the image below the output of the Dickson Charge Pump rises in 1.8us and t
 
 
 ## Observations
-- Output Voltage of the Dickson Charge Pump is **4.4V**.
-- Operating Frequency of the charge pump is **1 GHz**.
-- Rise Time of the charge pump is **1.8us**.
-- Voltage Conversion Ratio (M) of the charge pump is **4.19**.
+- Output Voltage of the Dickson Charge Pump is **4.47V**.
+- Operating Frequency of the charge pump is **10 GHz**.
+- Rise Time of the charge pump is **187ns**.
+- Voltage Conversion Ratio (M) of the charge pump is **4.25**.
 
 
 ## Limitations
