@@ -97,17 +97,17 @@ As shown above Dickson Charge Pump cell, constant DC supply, two pulse DC voltag
 ### 4 stage Dickson Charge Pump Cell
 ```
 *  Generated for: PrimeSim
-*  Design library name: dickson_pump_3stage
+*  Design library name: dickson_pump_4stage
 *  Design cell name: pump_cell
 *  Design view name: schematic
 .lib 'saed32nm.lib' TT
 
 *Custom Compiler Version S-2021.09
-*Tue Feb 22 07:27:38 2022
+*Sun Feb 27 16:42:02 2022
 
 .global gnd!
 ********************************************************************************
-* Library          : dickson_pump_3stage
+* Library          : dickson_pump_4stage
 * Cell             : pump_cell
 * View             : schematic
 * View Search List : hspice hspiceD schematic spice veriloga
@@ -122,15 +122,15 @@ xm3 net20 net16 net16 gnd! n105 w=3.5u l=0.03u nf=1 m=1
 xm2 net16 net12 net12 gnd! n105 w=3.5u l=0.03u nf=1 m=1
 xm1 net12 net8 net8 gnd! n105 w=3.5u l=30n nf=1 m=1
 xm0 net8 input input gnd! n105 w=3.5u l=30n nf=1 m=1
-c28 net91 clk2 c=10p
-c27 net87 clk1 c=10p
-c24 net76 clk2 c=10p
-c18 output gnd! c=1p
-c16 net20 clk2 c=10p
-c15 net16 clk1 c=10p
-c14 net12 clk2 c=10p
-c13 net8 clk1 c=10p
-c21 net69 clk1 c=10p
+c28 net91 clk2 c=1p
+c27 net87 clk1 c=1p
+c24 net76 clk2 c=1p
+c18 output gnd! c=0.1p
+c16 net20 clk2 c=1p
+c15 net16 clk1 c=1p
+c14 net12 clk2 c=1p
+c13 net8 clk1 c=1p
+c21 net69 clk1 c=1p
 
 
 
@@ -164,17 +164,17 @@ c21 net69 clk1 c=10p
 ### Testbench for Dickson Charge Pump
 ```
 *  Generated for: PrimeSim
-*  Design library name: dickson_pump_3stage
+*  Design library name: dickson_pump_4stage
 *  Design cell name: pump_cell_tb
 *  Design view name: schematic
 .lib 'saed32nm.lib' TT
 
 *Custom Compiler Version S-2021.09
-*Tue Feb 22 07:22:44 2022
+*Sun Feb 27 16:05:59 2022
 
 .global gnd!
 ********************************************************************************
-* Library          : dickson_pump_3stage
+* Library          : dickson_pump_4stage
 * Cell             : pump_cell
 * View             : schematic
 * View Search List : hspice hspiceD schematic spice veriloga
@@ -190,29 +190,29 @@ xm3 net20 net16 net16 gnd! n105 w=3.5u l=0.03u nf=1 m=1
 xm2 net16 net12 net12 gnd! n105 w=3.5u l=0.03u nf=1 m=1
 xm1 net12 net8 net8 gnd! n105 w=3.5u l=30n nf=1 m=1
 xm0 net8 input input gnd! n105 w=3.5u l=30n nf=1 m=1
-c28 net91 clk2 c=10p
-c27 net87 clk1 c=10p
-c24 net76 clk2 c=10p
-c18 output gnd! c=1p
-c16 net20 clk2 c=10p
-c15 net16 clk1 c=10p
-c14 net12 clk2 c=10p
-c13 net8 clk1 c=10p
-c21 net69 clk1 c=10p
+c28 net91 clk2 c=1p
+c27 net87 clk1 c=1p
+c24 net76 clk2 c=1p
+c18 output gnd! c=0.1p
+c16 net20 clk2 c=1p
+c15 net16 clk1 c=1p
+c14 net12 clk2 c=1p
+c13 net8 clk1 c=1p
+c21 net69 clk1 c=1p
 .ends pump_cell
 
 ********************************************************************************
-* Library          : dickson_pump_3stage
+* Library          : dickson_pump_4stage
 * Cell             : pump_cell_tb
 * View             : schematic
 * View Search List : hspice hspiceD schematic spice veriloga
 * View Stop List   : hspice hspiceD
 ********************************************************************************
-xi2 clk1 clk2 input output pump_cell
 v3 input gnd! dc=1.05
-v5 clk2 gnd! dc=0 pulse ( 0 1.05 0 1n 1n 2n 4n )
-v4 clk1 gnd! dc=0 pulse ( 1.05 0 0 1n 1n 2n 4n )
+v5 clk2 gnd! dc=0 pulse ( 0 1.05 0 100p 100p 200p 400p )
+v4 clk1 gnd! dc=0 pulse ( 1.05 0 0 100p 100p 200p 400p )
 r8 output gnd! r=5000k
+xi2 clk1 clk2 input output pump_cell
 
 
 
@@ -221,7 +221,7 @@ r8 output gnd! r=5000k
 
 
 
-.tran '1ns' '100us' name=tran
+.tran '1ns' '10us' name=tran
 
 .option primesim_remove_probe_prefix = 0
 .probe v(*) i(*) level=1
