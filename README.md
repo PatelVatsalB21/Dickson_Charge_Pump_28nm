@@ -246,7 +246,7 @@ r8 output gnd! r=5000k
 
 ## Simulation Results
 
-As in the image below the output of the Dickson Charge Pump rises in 0.973us and then saturates at a constant output of 4.39V - 4.4V. The Charge pump converts the input voltage of 1.05v to the output voltage of 4.4V with the Voltage Conversion Ratio (M) around 4.2. The clock signals have a rise and fall time of 1ns. Hence the operating frequency of the circuit is around 1 GHz.
+As in the image below the output of the Dickson Charge Pump rises in 1.8us and then saturates at a constant output of 4.39V - 4.4V. The Charge pump converts the input voltage of 1.05v to the output voltage of 4.4V with the Voltage Conversion Ratio (M) around 4.2. The clock signals have a rise and fall time of 1ns. Hence the operating frequency of the circuit is around 1 GHz.
 
 ### Output for 5us
 
@@ -264,7 +264,7 @@ As in the image below the output of the Dickson Charge Pump rises in 0.973us and
 ## Observations
 - Output Voltage of the Dickson Charge Pump is **4.4V**.
 - Operating Frequency of the charge pump is **1 GHz**.
-- Rise Time of the charge pump is **0.973us**.
+- Rise Time of the charge pump is **1.8us**.
 - Voltage Conversion Ratio (M) of the charge pump is **4.19**.
 
 
