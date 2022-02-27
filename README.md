@@ -37,11 +37,11 @@ capacitor is used to smoothen the output so it doesn’t add any voltage as it i
 
 ### Reference Circuit Diagram
 
-<img src="https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/reference%20images/Dickson%20Charge%20Pump%20Reference%20Circuit.png"/>
+<img src="https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/reference%20images/Dickson%20Charge%20Pump%20Reference%20Circuit.png"/>
 
 ### Reference Circuit Waveform
 
-![Output Waveform](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/reference%20images/Dickson%20Charge%20Pump%20Reference%20Output.png)
+![Output Waveform](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/reference%20images/Dickson%20Charge%20Pump%20Reference%20Output.png)
 
 # Tools Used
 
@@ -57,40 +57,40 @@ capacitor is used to smoothen the output so it doesn’t add any voltage as it i
 
 ### 4 stage Dickson Charge Pump Cell
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/dickson_pump_5stage_pump_cell_schematic.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/4%20stage%20charge%20pump.png)
 
 The circuit implemented consists of 9 NMOS as 2n+1 NMOS(n is the number of stages) for 4 stages of the pump. It also consists of 8 charging capacitors of 10pF capacitance and a filter capacitor of 1pf capacitance. It consists of 4 pins:- Input, Output, CLK1 and CLK2.
 
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/dickson_pump_5stage_pump_cell_symbol.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/dickson_pump_5stage_pump_cell_symbol.png)
 
 Above shown is the symbol for the charge pump circuit.
 
 
 ### Testbench for Dickson Charge Pump
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/Testbench%20Circuit.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/testbench.png)
 As shown above Dickson Charge Pump cell, constant DC supply, two pulse DC voltage supplies, a 5000k ohms resistor and appropriate ground terminals are utilized to create a testbench.
 
 ## Parameters set for NMOS
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/NMOS%20Properties.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/NMOS%20Properties.png)
 
 ## Parameters set for Voltage Source for Input
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/Input%20Supply%20Properties.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/Input%20Supply%20Properties.png)
 
 ## Parameters set for Pulse Voltage Source for Clock 1
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/Clock%201%20Properties.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/Clock%201%20Properties.png)
 
 ## Parameters set for Pulse Voltage Source for Clock 2
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/Clock%202%20Properties.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/Clock%202%20Properties.png)
 
 ## Transient Settings
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/schematic/Transient%20Settings.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/schematic/Transient%20Settings.png)
 
 ## Netlist
 
@@ -248,17 +248,17 @@ r8 output gnd! r=5000k
 
 As in the image below the output of the Dickson Charge Pump rises in 1.8us and then saturates at a constant output of 4.39V - 4.4V. The Charge pump converts the input voltage of 1.05v to the output voltage of 4.4V with the Voltage Conversion Ratio (M) around 4.2. The clock signals have a rise and fall time of 1ns. Hence the operating frequency of the circuit is around 1 GHz.
 
-### Output for 5us
+### Output for 2us
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/simulation/5%20stage%20pump%201ns%20rs%2010pf%20load%201pf%20cap%20alone%205us.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/simulation/4%20stage%20100ps%20rs%201pf%20load%200.1pf%20filter%201p%202us%20alone.png)
 
-### Output for 20us
+### Output for 10us
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/simulation/5%20stage%20pump%201ns%20rs%2010pf%20load%201pf%20cap%20alone.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/simulation/4%20stage%20100ps%20rs%201pf%20load%200.1pf%20filter%201p%2010us%20alone.png)
 
 ### Output with other signals
 
-![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/main/files/images/simulation/5%20stage%20pump%201ns%20rs%2010pf%20load%201pf%20cap%20separate.png)
+![image](https://github.com/PatelVatsalB21/Dickson_Charge_Pump_28nm/blob/master/files/images/simulation/4%20stage%20100ps%20rs%201pf%20load%200.1pf%20filter%201p%2010us%20separate%20signals.png)
 
 
 ## Observations
